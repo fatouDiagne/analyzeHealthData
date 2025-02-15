@@ -1,0 +1,1811 @@
+{
+  "name": "{{Dataset_Name}}",
+  "compatibilityLevel": 1604,
+  "model": {
+    "name": "{{Dataset_Name}}",
+    "culture": "en-US",
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Dim_Etablissement",
+        "sourceLineageTag": "[dbo].[Dim_Etablissement]",
+        "columns": [
+          {
+            "name": "id_etablissement",
+            "dataType": "string",
+            "sourceColumn": "id_etablissement",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "id_etablissement",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nom_etablissement",
+            "dataType": "string",
+            "sourceColumn": "nom_etablissement",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "nom_etablissement",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "siret",
+            "dataType": "string",
+            "sourceColumn": "siret",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "siret",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "commune",
+            "dataType": "string",
+            "sourceColumn": "commune",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "commune",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "departement",
+            "dataType": "string",
+            "sourceColumn": "departement",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "departement",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "categorie_etablissement",
+            "dataType": "string",
+            "sourceColumn": "categorie_etablissement",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "categorie_etablissement",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_categorie_etablissement",
+            "dataType": "string",
+            "sourceColumn": "libelle_categorie_etablissement",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_categorie_etablissement",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "numero_voie",
+            "dataType": "string",
+            "sourceColumn": "numero_voie",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "numero_voie",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "type_voie",
+            "dataType": "string",
+            "sourceColumn": "type_voie",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "type_voie",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nom_voie",
+            "dataType": "string",
+            "sourceColumn": "nom_voie",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "nom_voie",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "finess_ans",
+            "dataType": "string",
+            "sourceColumn": "finess_ans",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "finess_ans",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Dim_Etablissement",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "True"
+          }
+        ]
+      },
+      {
+        "name": "Dim_Professionnel",
+        "sourceLineageTag": "[dbo].[Dim_Professionnel]",
+        "columns": [
+          {
+            "name": "id_professionnel",
+            "dataType": "string",
+            "sourceColumn": "id_professionnel",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "id_professionnel",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nom",
+            "dataType": "string",
+            "sourceColumn": "nom",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "nom",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "prenom",
+            "dataType": "string",
+            "sourceColumn": "prenom",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "prenom",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_profession",
+            "dataType": "string",
+            "sourceColumn": "code_profession",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_profession",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "profession",
+            "dataType": "string",
+            "sourceColumn": "profession",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "profession",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_categorie_prof",
+            "dataType": "string",
+            "sourceColumn": "code_categorie_prof",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_categorie_prof",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "categorie_prof",
+            "dataType": "string",
+            "sourceColumn": "categorie_prof",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "categorie_prof",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_mode_exercice",
+            "dataType": "string",
+            "sourceColumn": "code_mode_exercice",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_mode_exercice",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "mode_exercice",
+            "dataType": "string",
+            "sourceColumn": "mode_exercice",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "mode_exercice",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Dim_Professionnel",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "True"
+          }
+        ]
+      },
+      {
+        "name": "Fact_Activite",
+        "sourceLineageTag": "[dbo].[Fact_Activite]",
+        "columns": [
+          {
+            "name": "id_professionnel",
+            "dataType": "string",
+            "sourceColumn": "id_professionnel",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "id_professionnel",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "id_etablissement",
+            "dataType": "string",
+            "sourceColumn": "id_etablissement",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "id_etablissement",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_role",
+            "dataType": "string",
+            "sourceColumn": "code_role",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_role",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "role",
+            "dataType": "string",
+            "sourceColumn": "role",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "role",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_genre",
+            "dataType": "string",
+            "sourceColumn": "code_genre",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_genre",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "genre_activite",
+            "dataType": "string",
+            "sourceColumn": "genre_activite",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "genre_activite",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_secteur",
+            "dataType": "string",
+            "sourceColumn": "code_secteur",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_secteur",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "secteur_activite",
+            "dataType": "string",
+            "sourceColumn": "secteur_activite",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "secteur_activite",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Fact_Activite",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "True"
+          }
+        ]
+      },
+      {
+        "name": "finess_etablissement",
+        "sourceLineageTag": "[dbo].[finess_etablissement]",
+        "columns": [
+          {
+            "name": "nofinesset",
+            "dataType": "string",
+            "sourceColumn": "nofinesset",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "nofinesset",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nofinessej",
+            "dataType": "string",
+            "sourceColumn": "nofinessej",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "nofinessej",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "raison_social",
+            "dataType": "string",
+            "sourceColumn": "raison_social",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "raison_social",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "raison_social_long",
+            "dataType": "string",
+            "sourceColumn": "raison_social_long",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "raison_social_long",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "complrs",
+            "dataType": "string",
+            "sourceColumn": "complrs",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "complrs",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "compldistrib",
+            "dataType": "string",
+            "sourceColumn": "compldistrib",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "compldistrib",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "numvoie",
+            "dataType": "string",
+            "sourceColumn": "numvoie",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "numvoie",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "typvoie",
+            "dataType": "string",
+            "sourceColumn": "typvoie",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "typvoie",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "voie",
+            "dataType": "string",
+            "sourceColumn": "voie",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "voie",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "compvoie",
+            "dataType": "string",
+            "sourceColumn": "compvoie",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "compvoie",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "lieuditbp",
+            "dataType": "string",
+            "sourceColumn": "lieuditbp",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "lieuditbp",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "commune",
+            "dataType": "string",
+            "sourceColumn": "commune",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "commune",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "departement",
+            "dataType": "string",
+            "sourceColumn": "departement",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "departement",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ibdepartement",
+            "dataType": "string",
+            "sourceColumn": "ibdepartement",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ibdepartement",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ligneacheminement",
+            "dataType": "string",
+            "sourceColumn": "ligneacheminement",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ligneacheminement",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "telephone",
+            "dataType": "string",
+            "sourceColumn": "telephone",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "telephone",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "telecopie",
+            "dataType": "string",
+            "sourceColumn": "telecopie",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "telecopie",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "categetab",
+            "dataType": "string",
+            "sourceColumn": "categetab",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "categetab",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libcategetab",
+            "dataType": "string",
+            "sourceColumn": "libcategetab",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libcategetab",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "categagretab",
+            "dataType": "string",
+            "sourceColumn": "categagretab",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "categagretab",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libcategagretab",
+            "dataType": "string",
+            "sourceColumn": "libcategagretab",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libcategagretab",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "siret",
+            "dataType": "string",
+            "sourceColumn": "siret",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "siret",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "codeape",
+            "dataType": "string",
+            "sourceColumn": "codeape",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "codeape",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "codemft",
+            "dataType": "string",
+            "sourceColumn": "codemft",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "codemft",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libmft",
+            "dataType": "string",
+            "sourceColumn": "libmft",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libmft",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "codesph",
+            "dataType": "string",
+            "sourceColumn": "codesph",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "codesph",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libsph",
+            "dataType": "string",
+            "sourceColumn": "libsph",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libsph",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "dateouv",
+            "dataType": "string",
+            "sourceColumn": "dateouv",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "dateouv",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "dateautor",
+            "dataType": "string",
+            "sourceColumn": "dateautor",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "dateautor",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "datemaj",
+            "dataType": "string",
+            "sourceColumn": "datemaj",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "datemaj",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "numuai",
+            "dataType": "string",
+            "sourceColumn": "numuai",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "numuai",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "finess_etablissement",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "person_activitie",
+        "sourceLineageTag": "[dbo].[person_activitie]",
+        "columns": [
+          {
+            "name": "type_d_identifiant_pp",
+            "dataType": "string",
+            "sourceColumn": "type_d_identifiant_pp",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "type_d_identifiant_pp",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "identifiant_pp",
+            "dataType": "string",
+            "sourceColumn": "identifiant_pp",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "identifiant_pp",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "identification_nationale_pp",
+            "dataType": "string",
+            "sourceColumn": "identification_nationale_pp",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "identification_nationale_pp",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_civilite_d_exercice",
+            "dataType": "string",
+            "sourceColumn": "code_civilite_d_exercice",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_civilite_d_exercice",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_civilite_d_exercice",
+            "dataType": "string",
+            "sourceColumn": "libelle_civilite_d_exercice",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_civilite_d_exercice",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_civilite",
+            "dataType": "string",
+            "sourceColumn": "code_civilite",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_civilite",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_civilite",
+            "dataType": "string",
+            "sourceColumn": "libelle_civilite",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_civilite",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nom_d_exercice",
+            "dataType": "string",
+            "sourceColumn": "nom_d_exercice",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "nom_d_exercice",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "prenom_d_exercice",
+            "dataType": "string",
+            "sourceColumn": "prenom_d_exercice",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "prenom_d_exercice",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_profession",
+            "dataType": "string",
+            "sourceColumn": "code_profession",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_profession",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_profession",
+            "dataType": "string",
+            "sourceColumn": "libelle_profession",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_profession",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_categorie_professionnelle",
+            "dataType": "string",
+            "sourceColumn": "code_categorie_professionnelle",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_categorie_professionnelle",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_categorie_professionnelle",
+            "dataType": "string",
+            "sourceColumn": "libelle_categorie_professionnelle",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_categorie_professionnelle",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_type_savoir_faire",
+            "dataType": "string",
+            "sourceColumn": "code_type_savoir_faire",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_type_savoir_faire",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_type_savoir_faire",
+            "dataType": "string",
+            "sourceColumn": "libelle_type_savoir_faire",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_type_savoir_faire",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_savoir_faire",
+            "dataType": "string",
+            "sourceColumn": "code_savoir_faire",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_savoir_faire",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_savoir_faire",
+            "dataType": "string",
+            "sourceColumn": "libelle_savoir_faire",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_savoir_faire",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_mode_exercice",
+            "dataType": "string",
+            "sourceColumn": "code_mode_exercice",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_mode_exercice",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_mode_exercice",
+            "dataType": "string",
+            "sourceColumn": "libelle_mode_exercice",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_mode_exercice",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "numero_siret_site",
+            "dataType": "string",
+            "sourceColumn": "numero_siret_site",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "numero_siret_site",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "numero_siren_site",
+            "dataType": "string",
+            "sourceColumn": "numero_siren_site",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "numero_siren_site",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "numero_finess_site",
+            "dataType": "string",
+            "sourceColumn": "numero_finess_site",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "numero_finess_site",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "numero_finess_etablissement_juridique",
+            "dataType": "string",
+            "sourceColumn": "numero_finess_etablissement_juridique",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "numero_finess_etablissement_juridique",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "identifiant_technique_de_la_structure",
+            "dataType": "string",
+            "sourceColumn": "identifiant_technique_de_la_structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "identifiant_technique_de_la_structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "raison_sociale_site",
+            "dataType": "string",
+            "sourceColumn": "raison_sociale_site",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "raison_sociale_site",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "enseigne_commerciale_site",
+            "dataType": "string",
+            "sourceColumn": "enseigne_commerciale_site",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "enseigne_commerciale_site",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "complement_destinataire_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "complement_destinataire_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "complement_destinataire_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "complement_point_geographique_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "complement_point_geographique_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "complement_point_geographique_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "numero_voie_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "numero_voie_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "numero_voie_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "indice_repetition_voie_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "indice_repetition_voie_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "indice_repetition_voie_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_type_de_voie_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "code_type_de_voie_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_type_de_voie_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_type_de_voie_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "libelle_type_de_voie_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_type_de_voie_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_voie_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "libelle_voie_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_voie_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "mention_distribution_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "mention_distribution_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "mention_distribution_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "bureau_cedex_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "bureau_cedex_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "bureau_cedex_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_postal_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "code_postal_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_postal_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_commune_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "code_commune_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_commune_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_commune_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "libelle_commune_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_commune_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_pays_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "code_pays_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_pays_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_pays_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "libelle_pays_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_pays_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "telephone_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "telephone_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "telephone_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "telephone_2_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "telephone_2_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "telephone_2_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "telecopie_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "telecopie_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "telecopie_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "adresse_e_mail_coord._structure",
+            "dataType": "string",
+            "sourceColumn": "adresse_e_mail_coord._structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "adresse_e_mail_coord._structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_departement_structure",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "code_departement_structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_departement_structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_departement_structure",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "libelle_departement_structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_departement_structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ancien_identifiant_de_la_structure",
+            "dataType": "string",
+            "sourceColumn": "ancien_identifiant_de_la_structure",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ancien_identifiant_de_la_structure",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "autorite_d_enregistrement",
+            "dataType": "string",
+            "sourceColumn": "autorite_d_enregistrement",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "autorite_d_enregistrement",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_secteur_d_activite",
+            "dataType": "string",
+            "sourceColumn": "code_secteur_d_activite",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_secteur_d_activite",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_secteur_d_activite",
+            "dataType": "string",
+            "sourceColumn": "libelle_secteur_d_activite",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_secteur_d_activite",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_section_tableau_pharmaciens",
+            "dataType": "string",
+            "sourceColumn": "code_section_tableau_pharmaciens",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_section_tableau_pharmaciens",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_section_tableau_pharmaciens",
+            "dataType": "string",
+            "sourceColumn": "libelle_section_tableau_pharmaciens",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_section_tableau_pharmaciens",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_role",
+            "dataType": "string",
+            "sourceColumn": "code_role",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_role",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_role",
+            "dataType": "string",
+            "sourceColumn": "libelle_role",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_role",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "code_genre_activite",
+            "dataType": "string",
+            "sourceColumn": "code_genre_activite",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "code_genre_activite",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "libelle_genre_activite",
+            "dataType": "string",
+            "sourceColumn": "libelle_genre_activite",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "libelle_genre_activite",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "_c56",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "_c56",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "_c56",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "person_activitie",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "2443530f523ceb75bb65051a997d28b3",
+        "fromTable": "finess_etablissement",
+        "fromColumn": "nofinesset",
+        "toTable": "person_activitie",
+        "toColumn": "numero_finess_site"
+      },
+      {
+        "name": "8492e1e7eec49e1bf995820330c5cfdc",
+        "fromTable": "Fact_Activite",
+        "fromColumn": "id_etablissement",
+        "toTable": "Dim_Etablissement",
+        "toColumn": "id_etablissement"
+      },
+      {
+        "name": "b4b08c0f02129d90587aba97d90ce9a3",
+        "fromTable": "Fact_Activite",
+        "fromColumn": "id_professionnel",
+        "toTable": "Dim_Professionnel",
+        "toColumn": "id_professionnel"
+      },
+      {
+        "name": "e532a2acf9e1e9af485a426d3b9e5c65",
+        "fromTable": "finess_etablissement",
+        "fromColumn": "nofinesset",
+        "toTable": "Dim_Etablissement",
+        "toColumn": "id_etablissement"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "kind": "m",
+        "expression": "let\n    database = {{TDS_Endpoint}}\nin\n    database\n"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "SourceLineageTagType",
+        "value": "DatabaseFullyQualifiedName"
+      }
+    ]
+  }
+}
